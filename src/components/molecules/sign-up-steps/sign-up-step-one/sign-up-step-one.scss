@@ -1,0 +1,92 @@
+@import "src/styles/varriables";
+@import 'src/styles/media';
+
+.sign-up-form-step-one{
+  margin-left: 11%;
+  width:75%;
+  //width: 100%;
+  .input-email{
+    &:hover{
+      border-bottom-color:$colorGreenPrimary;
+    }
+  }
+
+  input.ant-input{
+    color:white;
+    &:hover{
+      border-bottom-color:$colorGreenPrimary;
+    }
+    &::placeholder{
+      color: white !important;
+    }
+  }
+
+  .ant-input-password-icon{
+    color: white;
+  }
+
+  .input-username, .input-email{
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color: white !important;
+    padding: 10px 18px;
+    &::placeholder{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: white !important;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    background: transparent;
+  }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
+
+  //.ant-form-item {
+  //  margin-bottom: 16px;
+  //
+  //  &:last-child {
+  //    margin-bottom: 0;
+  //  }
+  //}
+
+  &__submit {
+    width: 65%;
+    background: $colorGreenPrimary;
+    border-radius: 60px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    color: #24242F;
+    border: none;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    &:hover{
+      color: #24242F;
+      background: $colorGreenPrimary;
+      opacity: 0.8;
+    }
+  }
+
+  &__info_text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #595959;
+    margin-bottom: 0 !important;
+  }
+}

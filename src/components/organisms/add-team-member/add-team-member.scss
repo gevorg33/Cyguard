@@ -1,0 +1,85 @@
+@import "src/styles/varriables";
+@import "src/styles/media";
+
+.role-section {
+  .select-role{
+    margin-top: 30px;
+    width: 375px !important;
+    @include media(mobile){
+      width: 100% !important;
+    }
+    @include media(md){
+      width: 80% !important;
+    }
+    @include media(lg){
+      width: 80% !important;
+    }
+    @include media(xl){
+      width: 80% !important;
+    }
+  }
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border-bottom: 1px solid $colorGreenPrimary !important;
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    background: transparent;
+  }
+  .ant-select-arrow{
+    color: $colorGreenPrimary;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    background: transparent !important;
+    color: #24242F;
+    border:none;
+    padding-left: 18px;
+    border-bottom: 1px solid $colorGreenPrimary;
+    box-shadow: none !important;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    &:hover,&:active{
+      box-shadow: none;
+    }
+  }
+  .select-industry{
+    width: 100%;
+    background-color: white !important;
+    .ant-select-item-option-selected{
+      background-color: white !important;
+      color: black;
+    }
+  }
+}
+.add-team-member{
+  width: 90% !important;
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom:1px solid #E4E4F7 !important;
+    color:#24242F !important;
+    &:focus, &:active, &:hover {
+      border-bottom:1px solid $colorGreenPrimary !important;
+      box-shadow: none !important;
+    }
+  }
+}
+.edit-company-step-one .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  border-right: none !important;
+}
+.add-team-member-btn{
+  width: 177px !important;
+  margin-left: 6% !important;
+  @include media(mobile){
+    margin-top: 70px;
+    width: 60%;
+    transform: translate(-50%);
+    margin-left: 50% !important;
+  }
+}

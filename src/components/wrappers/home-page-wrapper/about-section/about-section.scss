@@ -1,0 +1,28 @@
+@import "src/styles/media";
+
+.about-section{
+  margin-top: 96px;
+  padding: 0px 208px;
+  @include media(mobile){
+    padding: 0px 37px;
+  }
+  @include media(tablet){
+    padding: 0px 37px;
+  }
+  @include media(smallTablet){
+    padding: 0px 37px;
+  }
+  .features-title{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 60px;
+  }
+  .about-description{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}

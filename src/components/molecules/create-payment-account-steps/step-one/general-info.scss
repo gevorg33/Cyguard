@@ -1,0 +1,160 @@
+@import "src/styles/varriables";
+@import 'src/styles/media';
+
+.edit-company-step-one{
+
+  .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border-right: 1px solid lightgray !important;
+  }
+  .phone-nmb{
+    ::placeholder{
+      padding-left: 8px !important;
+    }
+  }
+  width:40%;
+  @include media(mobile){
+    width:80%;
+  }
+  @include media(smallTablet){
+    width:75%;
+  }
+  @include media(tablet){
+    width:75%;
+  }
+  .input-email {
+    &:hover {
+      border-bottom-color: $colorGreenPrimary;
+    }
+  }
+
+  input.ant-input{
+    color:#24242F;
+    &:hover{
+      border-bottom-color:$colorGreenPrimary;
+    }
+    &::placeholder{
+      color: #8E8EB2 !important;
+    }
+  }
+
+  .ant-input-password-icon {
+    color: #24242F;
+  }
+  .input-username, .input-email{
+    border: none;
+    border-bottom: 1px solid #E4E4F7;
+    background: transparent;
+    box-shadow: none !important;
+    color:#24242F !important;
+    padding: 10px 18px;
+    &:active, &:focus {
+      border-bottom-color: $colorGreenPrimary;
+    }
+    &::placeholder{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: #8E8EB2 !important;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    background: transparent;
+  }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
+
+  .submit{
+    width:50%;
+    margin-left: 0%;
+    transform: translate(0%);
+    @include media(mobile){
+      width:60%;
+      margin-left: 60%;
+      transform: translate(-60%);
+    }
+  }
+}
+.radio-btn{
+  margin-left: 28.5%;
+  @include media(mobile){
+    margin-left: 0%;
+  }
+  .ant-switch-checked{
+    background: transparent !important;
+  }
+  @include media(mobile){
+    display: inline-block !important;
+  }
+}
+
+.ant-switch,.ant-switch-checked{
+  background-color: white !important;
+  border: 1px solid lightgray;
+  &:hover{
+    border: 1px solid lightgray;
+  }
+}
+.ant-switch-handle{
+  background: $colorGreenPrimary;
+  border-radius: 40%;
+  top: 1px;
+  left: 1px;
+}
+.ant-switch-handle::before{
+  background: $colorGreenPrimary;
+  border: 1px solid $colorGreenPrimary;
+}
+.ant-switch-checked .ant-switch-handle{
+  left: calc(100% - 18px - 1px);
+}
+.add-team-member-btn{
+  width: 177px !important;
+  margin-left: 6% !important;
+  @include media(mobile){
+    margin-top: 70px;
+    width: 60%;
+    transform: translate(-50%);
+    margin-left: 50% !important;
+  }
+}
+.request-approval-btn{
+  margin-left: 20px !important;
+  transform: translate(0%) !important;
+  width: 295px !important;
+}
+.add-payment-file-section{
+  padding: 40px;
+  @include media(mobile){
+    padding: 0px 0px 0px 10px;
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    height: 220px !important;
+    width: 300px !important;
+    border-color: $colorGreenPrimary;
+    @include media(mobile){
+      height: 50px !important;
+    }
+  }
+  .ant-upload.ant-upload-select-picture-card > .ant-upload{
+    color: $colorGreenPrimary;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.txt-al-center{
+  text-align: center;
+}
+.no-file-uploaded{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 35px !important;
+}

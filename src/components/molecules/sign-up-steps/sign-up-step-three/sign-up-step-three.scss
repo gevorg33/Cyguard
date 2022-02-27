@@ -1,0 +1,83 @@
+@import "src/styles/varriables";
+@import 'src/styles/media';
+
+.sign-up-form-step-three{
+  margin-left: 11%;
+  width:75%;
+  .input-username{
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color:white !important;
+    padding: 5px 10px !important;
+    margin-bottom: 35px;
+    &::placeholder{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: white;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    background: transparent;
+  }
+  .ant-select-arrow{
+    color: $colorGreenPrimary;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    background: transparent !important;
+    color: white;
+    border:none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    box-shadow: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    &:hover,&:active{
+      box-shadow: none;
+    }
+  }
+  .select-industry{
+    width: 100%;
+    background: transparent !important;
+  }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
+
+  &__submit {
+    width: 65%;
+    background: $colorGreenPrimary;
+    border-radius: 60px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #24242F;
+    border: none;
+    text-align: center;
+    &:hover{
+      color: #24242F;
+      background: $colorGreenPrimary;
+      opacity: 0.8;
+    }
+  }
+}
+.select-industry{
+  background-color: #24242F !important;
+  .ant-select-item-option-selected{
+    background-color: #24242F !important;
+    color: white;
+  }
+}

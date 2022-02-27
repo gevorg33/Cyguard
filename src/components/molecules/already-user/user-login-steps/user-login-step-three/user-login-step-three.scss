@@ -1,0 +1,105 @@
+@import "src/styles/varriables";
+@import 'src/styles/media';
+
+.login-modal-from-step-three{
+  padding: 20px 70px 20px 70px;
+  .auth_form__title{
+    text-align: left !important;
+    color: $colorGreenPrimary;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 60px;
+  }
+  .input-username, .input-password{
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color: #24242F !important;
+    padding-left: 0;
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    &::placeholder{
+      font-size: 12px;
+      color: #505068;
+      text-align: center;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    color: #24242F;
+    background: transparent;
+  }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 0 !important;
+    text-align: center;
+    color: #52C41A;
+  }
+
+  .ant-form-item-children-icon {
+    display: none;
+  }
+
+  .ant-input-suffix {
+    padding-right: 0 !important;
+  }
+  .ant-form-item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__google_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: flex;
+    }
+    span:last-child {
+      color: #262626;
+    }
+  }
+
+  &__submit {
+    width: 65%;
+    background: $colorGreenPrimary;
+    border-radius: 60px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #24242F;
+    border: none;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    &:hover{
+      color: #24242F;
+      background: $colorGreenPrimary;
+      opacity: 0.8;
+    }
+  }
+
+  &__info_text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #595959;
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/styles/media";
+@import "src/styles/varriables";
+
+.already_user {
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  line-height: 170.23%;
+  .navbar-visible{
+    display: block;
+    @include media(mobile){
+      display: none;
+    }
+  }
+  .already-user-btn{
+    background:transparent;
+    border:none;
+    display:inline-block;
+  }
+  &__text {
+    color: white;
+  }
+}

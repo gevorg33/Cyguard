@@ -1,0 +1,121 @@
+@import './src/styles/media';
+@import './src/styles/varriables';
+
+.auth_form {
+  width: 100%;
+  margin: auto;
+  padding: 3.5vh 5vw 3vw 5vw;
+  background: linear-gradient(247.99deg, rgba(36, 36, 47, 0.17) 0%, rgba(36, 36, 47, 0.72) 48.89%, rgba(36, 36, 47, 0.49) 98.46%);
+  box-shadow: 28px 50px 90px rgba(23, 18, 43, 0.7);
+  backdrop-filter: blur(26.3971px);
+  border-radius: 11.477px;
+  @include media(xl){
+    padding: 3.5vh 5vw 3vw 5vw;
+  }
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    border-bottom-color: $colorGreenPrimary;
+  }
+  .auth_form__title{
+    text-align: left !important;
+    color: $colorGreenPrimary;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 60px;
+  }
+  .input-username, .input-password{
+    width: 268px;
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color: white;
+    padding-left: 0;
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    color: white;
+    background: transparent;
+  }
+
+  //@include media(tablet) {
+  //  padding-bottom: 0;
+  //}
+
+  &__title {
+    margin-bottom: 0 !important;
+    text-align: center;
+    color: #52C41A;
+  }
+
+  .ant-form-item-children-icon {
+    display: none;
+  }
+
+  .ant-input-suffix {
+    padding-right: 0 !important;
+  }
+  .ant-form-item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__google_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: flex;
+    }
+    span:last-child {
+      color: #262626;
+    }
+  }
+
+  &__submit {
+    width: 85%;
+    background: $colorGreenPrimary;
+    border-radius: 60px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 27.5%;
+    color: #24242F;
+    border: none;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    @include media(tablet){
+      margin-top: 5%;
+    }
+    @include media(smallTablet){
+      margin-top: 5%;
+    }
+    @include media(xl){
+      margin-top: 5vh;
+    }
+    &:hover{
+      color: #24242F;
+      background: $colorGreenPrimary;
+      opacity: 0.8;
+    }
+  }
+
+  &__info_text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #595959;
+    margin-bottom: 0 !important;
+  }
+}

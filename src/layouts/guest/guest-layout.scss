@@ -1,0 +1,88 @@
+@import 'src/styles/media';
+@import "src/styles/varriables";
+
+.my-layout {
+  background-image: linear-gradient(180deg, #24242F 0%, rgba(36, 36, 47, .4) 100%),url('../../../src/assets/images/backgrounds/main_background_optimized.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.guest_layout {
+  min-height: 100vh;
+  position: relative;
+  //background: red !important;
+  &__row {
+    width: 100%;
+    display: block;
+    @include media(desktop) {
+      align-items: center;
+    }
+
+    @include media(tablet) {
+      margin-top: 25px;
+    }
+    @include media(smallTablet) {
+      margin-top: 25px;
+    }
+
+  }
+
+  &__header {
+    width: 100%;
+    height: auto;
+    min-height: 57px;
+    background-color: transparent;
+    line-height: inherit;
+    padding: 76px 94px 0px 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    @include media(mobile) {
+      padding: 25px 25px 15px 25px;
+      background: #24242F;
+    }
+    @include media(tablet) {
+      padding: 25px 25px 15px 25px;
+      background: #24242F;
+    }
+    @include media(smallTablet) {
+      padding: 25px 25px 15px 25px;
+      background: #24242F;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 247px;
+    padding: 0px 121px 0px 202px;
+    background: $colorGreenPrimary;
+    @include media(mobile) {
+      justify-content: flex-end;
+      padding: 122px 45px 87px 84px;
+    }
+    @include media(tablet) {
+      padding: 122px 45px 87px 84px;
+    }
+    @include media(smallTablet) {
+      padding: 122px 45px 87px 84px;
+    }
+    .ant-col-override{
+      width: 100%;
+    }
+    @include media(desktop) {
+      height: 387px;
+    }
+    @include media(tablet) {
+      height: auto;
+    }
+    @include media(smallTablet) {
+      height: auto;
+    }
+  }
+}

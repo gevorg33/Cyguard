@@ -1,0 +1,16 @@
+.right-sider {
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* or 100% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray / gray-9 */
+
+    color: #262626;
+  }
+}

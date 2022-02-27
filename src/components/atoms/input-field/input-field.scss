@@ -1,0 +1,36 @@
+@import "src/styles/varriables";
+
+.input-field{
+  input.ant-input{
+    color: black;
+    &:hover{
+      border-bottom-color:$colorGreenPrimary;
+    }
+    &::placeholder{
+      color: black !important;
+    }
+  }
+  .input-username{
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color: black !important;
+    padding: 10px 18px;
+    &::placeholder{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: black !important;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    background: transparent;
+  }
+}

@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+
+@import 'styles/varriables';
+@import 'styles/mixins';
+@import 'styles/fonts';
+@import 'base';
+
+body {
+  font-family: Roboto, sans-serif;
+}

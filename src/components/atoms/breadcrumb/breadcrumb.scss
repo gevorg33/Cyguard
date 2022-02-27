@@ -1,0 +1,10 @@
+@import "src/styles/media";
+
+.navbar-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @include media(mobile){
+    display: none;
+  }
+}

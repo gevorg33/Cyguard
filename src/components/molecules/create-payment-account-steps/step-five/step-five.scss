@@ -1,0 +1,19 @@
+@import "src/styles/varriables";
+
+.generate-secret-sentance{
+  margin-bottom: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 10px;
+  color: $colorGreenPrimary;
+  cursor: pointer;
+  .icon {
+    vertical-align: middle;
+    color: $colorGreenPrimary;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+}

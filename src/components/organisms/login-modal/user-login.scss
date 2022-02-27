@@ -1,0 +1,80 @@
+@import "src/styles/varriables";
+@import "src/styles/media";
+
+.already-user-modal{
+  .ant-modal-close-x{
+    @include media(mobile) {
+      display: none;
+    }
+  }
+  .ant-modal-body {
+    @include media(mobile) {
+      width: 100vw;
+      height: 100vh;
+      padding: 0px;
+      padding-top: 50px;
+    }
+  }
+  .ant-steps{
+    padding: 35px 80px 0px 80px;
+    .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after{
+      background-color: $colorGreenPrimary !important;
+    }
+    .ant-steps-item-icon{
+      height: 40px;
+      width: 40px;
+      span{
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+    .ant-steps-item-finish .ant-steps-item-icon{
+      background: $colorGreenPrimary;
+      color: #000000;
+      border-color: $colorGreenPrimary;
+    }
+    .anticon svg{
+      color: #000000;
+    }
+    .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon{
+      background: $colorGreenPrimary;
+      color: #000000;
+      border-color: $colorGreenPrimary;
+      .ant-steps-icon{
+        color: #000000;
+      }
+    }
+
+    //.ant-steps-item-icon{
+    //  background: #3FE994;
+    //}
+  }
+  .already-user-title{
+    .verification-title{
+      padding: 10px 0px 0px 55px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .verification-code{
+      text-align: center;
+
+    }
+    .google-auth-code{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #505068;
+      text-align: center;
+      margin-top: 43px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.ant-modal-wrap{
+  overflow: hidden;
+  width: 100%;
+}

@@ -1,0 +1,69 @@
+@import "src/styles/varriables";
+@import "src/styles/media";
+
+.dashboard-notifications {
+  p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #8E8EB2;
+  }
+  .rotate-icon svg{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  svg{
+    cursor: pointer;
+  }
+  .ant-table-thead{
+    tr th{
+      background: transparent !important;
+    }
+  }
+  .ant-table-cell::before{
+    display: none;
+  }
+  tr.ant-table-expanded-row > td, tr.ant-table-expanded-row:hover > td {
+    background: transparent;
+    transition: all 0.5s;
+  }
+  .notify-icon-large{
+    width:46px;
+    height:57.5px;
+  }
+  .d-i-block{
+    display: inline-block;
+    margin-left: 21.5px;
+    vertical-align: bottom;
+    font-weight: bold;
+  }
+  .approve-btn, .decline-btn{
+    width:84px;
+    height:25px;
+    font-size:15px;
+    line-height: 20px;
+    border-radius: 60px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+  }
+  .approve-btn{
+    background: $colorGreenPrimary;
+  }
+  .decline-btn{
+    background: red;
+    color: white;
+  }
+  .nudge-btn{
+    background: gray !important;
+  }
+}
+.new-company-btn-area{
+  @include media(smallDevices){
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

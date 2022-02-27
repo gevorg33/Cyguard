@@ -1,0 +1,128 @@
+@import "src/styles/varriables";
+@import 'src/styles/media';
+
+.new-account-modal{
+  .ant-modal-footer{
+    display: none;
+  }
+  .ant-modal-content{
+    padding: 50px;
+    box-shadow: 2px 2px 10px #3FE994;
+    border-radius: 8px;
+    margin-top: 40px;
+    @include media(mobile){
+      padding: 40px 10px 30px 10px;
+      width: 90vw;
+      margin-left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .auth_form__title{
+    text-align: center !important;
+    color: $colorGreenPrimary;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 60px;
+  }
+  .ant-input::placeholder{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #505068;
+  }
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    border-bottom-color: $colorGreenPrimary;
+  }
+  .ant-input-affix-wrapper > input.ant-input{
+    color: #24242F;
+    background: transparent;
+  }
+
+  .input-username{
+    border: none;
+    border-bottom: 1px solid $colorGreenPrimary;
+    background: transparent;
+    box-shadow: none !important;
+    color: #24242F;
+    padding-left: 0;
+    width: 60%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    &::placeholder{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: #505068;
+      text-align: center;
+    }
+  }
+  .ant-form-item-has-error :not(.ant-input-disabled) :not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled) :not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper
+  {
+    background: transparent;
+  }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
+
+  @include media(smallTablet) {
+    padding-bottom: 0;
+  }
+  &__title {
+    margin-bottom: 0 !important;
+    text-align: center;
+    color: #52C41A;
+  }
+
+  .ant-image.ant-image-error{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+
+  .already-user-title{
+    .verification-title{
+      padding: 20px 0px 5px 0px;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .verification-code{
+      text-align: center;
+    }
+    .f-size-18{
+      @include media(mobile){
+        font-size: 18px;
+        font-family: Roboto, sans-serif;
+      }
+    }
+    .google-auth-code{
+      font-size: 12px;
+      line-height: 18px;
+      color: #505068;
+      text-align: center;
+    }
+  }
+}
+
+.btn-width {
+  width: 130px !important;
+  @include media(mobile){
+    width: 110px !important;
+  }
+}
+
+.next-btn {
+    background: transparent !important;
+    border: 1px solid $colorGreenPrimary;
+   &:hover{
+     border: 1px solid $colorGreenPrimary;
+   }
+}

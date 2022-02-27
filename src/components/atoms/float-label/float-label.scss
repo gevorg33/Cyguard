@@ -1,0 +1,65 @@
+@import "src/styles/varriables";
+
+.float-label {
+  position: relative;
+  margin-bottom: 18px;
+
+  .ant-form-vertical .ant-form-item {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+  .ant-form-vertical {
+    .ant-form-item:nth-child(3) {
+      margin-top: -15px;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    padding: 0 10px 0 0 ;
+    border: 1px solid #9B9B9B !important;
+    border-radius: 4px;
+  }
+
+  input {
+    padding: 11px !important;
+    border: 1px solid #9B9B9B;
+    border-radius: 4px;
+  }
+
+  .ant-form-item-label {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    z-index: 9;
+    transition: 200ms;
+
+    &.active {
+      top: -15px;
+      background: white;
+      padding: 0 10px;
+    }
+  }
+
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+}
+
+.label {
+  font-size: 14px !important;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 13px;
+  color: $colorGreenPrimary;
+  transition: 0.2s ease all;
+  padding-left: 0px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+.label-float {
+  top: -5px;
+  font-size: 14px !important;
+}

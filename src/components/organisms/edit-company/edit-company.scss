@@ -1,0 +1,97 @@
+@import "src/styles/media";
+@import "src/styles/varriables";
+
+.notify-icon-large{
+  width:46px;
+  height:57.5px;
+}
+.d-i-block{
+  display: inline-block;
+  margin-left: 21.5px;
+  vertical-align: bottom;
+  font-weight: bold;
+  @include media(mobile){
+    font-size: 18px !important;
+  }
+}
+.ml-68{
+  margin-left: 68px;
+}
+.heading-attention{
+  min-width: 40%;
+  border: 1px dashed $colorGreenPrimary;
+  padding: 25px 25px 15px 15px;
+}
+.w-60{
+  //width: 60%;
+  width: 375px !important;
+  @include media(mobile){
+    width: 100% !important;
+  }
+  @include media(md){
+    width: 80% !important;
+  }
+  @include media(lg){
+    width: 80% !important;
+  }
+  @include media(xl){
+    width: 80% !important;
+  }
+}
+.sign-up-btn{
+  margin-left: 25px;
+  min-width: 40% !important;
+  @include media(mobile){
+    min-width: 55vw !important;
+    font-size: 17px;
+  }
+  &:hover{
+    border: 1px solid $colorGreenPrimary;
+    transition: 1s;
+  }
+}
+.sign-up-btn-bg{
+  background: transparent;
+  border: 1px solid $colorGreenPrimary;
+  margin-left: 25px !important;
+  transform: translate(0%) !important;
+  width: 220px !important;
+  @include media(mobile){
+    transform: translate(-50%) !important;
+    margin-left: 50% !important;
+  }
+  @include media(md){
+    margin-left: 0px !important;
+  }
+  @include media(smallTablet){
+    margin-left: 0px !important;
+  }
+  @include media(lg){
+    margin-left: 0px !important;
+  }
+  @include media(xl){
+    margin-left: 0px !important;
+  }
+}
+.confirm-account-btn{
+  margin-left:0px !important;
+  transform: translate(0%) !important;
+  width: 177px !important;
+  @include media(mobile){
+    transform: translate(-50%) !important;
+    margin-left: 50% !important;
+  }
+}
+
+.submit-btn{
+  margin-left: 15%;
+  width: 30%;
+  height: 49px;
+  margin-top: 80px;
+  @include media(mobile){
+    margin-top: 70px;
+    width: 60%;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+}

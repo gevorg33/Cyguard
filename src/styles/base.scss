@@ -1,0 +1,398 @@
+@import 'styles/media';
+@import 'styles/varriables';
+
+* {
+  outline: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.ant-layout {
+  background: #FFFFFF;
+}
+
+.outlined {
+  outline: 1px dashed rgba(50, 50, 50, 0.5);
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-secondary {
+  background-color: #001529 !important;
+}
+
+.bg-ant-info {
+  background-color: #E6F7FF;
+}
+
+.bg-ant {
+  background-color: #f0f0f0;
+}
+
+.bg-ant-light {
+  background-color: #FAFAFA;
+}
+
+.bordered-standard {
+  border: 1px solid #f0f0f0;
+}
+
+.border-r-standard {
+  border-right: 1px solid #f0f0f0;
+}
+
+.bg-gray-light {
+  background-color: #C4C4C4;
+}
+
+.border-none {
+  border: none;
+}
+
+.br-radius-standard {
+  border-radius: 4px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.c-green {
+  color: $colorGreenPrimary;
+}
+
+.c-white {
+  color: #FFFFFF;
+}
+
+.c-gray-secondary {
+  color: $colorGraySecondary;
+}
+
+.c-light-grey {
+  color: lightgrey;
+}
+
+.c-gray-bold {
+  color: $colorGrayBold;
+}
+
+.float-right {
+  float: right;
+}
+
+.forgot-password {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+
+  &:hover {
+    color: $colorGreenPrimary;
+  }
+}
+
+.menu-item-no-right-border {
+  &:after {
+    contain: none;
+    border: none !important;
+  }
+}
+
+.c-black {
+  color: #000000;
+}
+
+.blue-button {
+  background-color: #E6F7FF;
+  color: #1890FF;
+  border: 1px solid #91D5FF;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.25);
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: not-allowed;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.font-16 {
+  font-size: 16px !important;
+}
+
+.font-12 {
+  font-size: 12px !important;
+}
+
+.font-monospace {
+  font-family: monospace normal;
+}
+
+.font-normal {
+  font-family: normal sans-serif;
+}
+
+.font-serif {
+  font-family: Serif, sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.base_form {
+  max-width: 330px;
+  margin: 10rem auto;
+  padding: 24px 24px 18px 24px;
+  background: #FFFFFF;
+  border-radius: 2px;
+
+  .ant-form-item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .ant-form-item-children-icon {
+    display: none;
+  }
+
+  .ant-input-suffix {
+    padding-right: 0 !important;
+  }
+
+  &__submit {
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.tablet-display-none {
+  @include media(tablet) {
+    display: none !important;
+  }
+  @include media(smallTablet) {
+    display: none !important;
+  }
+}
+
+// TODO make scss generated mixins each sizes
+.xs-mr-20 {
+  @include media(xs) {
+    margin-right: 20px;
+  }
+}
+
+/* TODO make margin and padding base classes */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-0-force {
+  margin-bottom: 0 !important;
+}
+
+.min-h-100 {
+  min-height: 100%;
+}
+
+@keyframes zoomInOutAnimation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.loading-zoom-animation {
+  animation: zoomInOutAnimation 1s infinite;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.c-blue-primary {
+  color: #1890FF;
+}
+
+.guided-element {
+  box-shadow: $activeElementBoxShadow;
+}
+
+.c-gray-primary {
+  color: #262626 !important;
+}
+
+.cursor-inherit {
+  cursor: inherit;
+}
+
+// Position start
+@each $val in $positions {
+  .#{$val} {
+    @include position($val);
+  }
+}
+
+// Position end
+
+// Margin/Padding - Start
+@each $position in $positions {
+  @for $i from 0 through 64 {
+    @include margin($i, $position);
+    @include padding($i, $position);
+  }
+}
+
+// Margin/Padding - end
+
+// Height/Width - start
+@for $i from 0 through 30 {
+  .h-#{$i} {
+    height: $i * 8px;
+  }
+  .w-#{$i} {
+    width: $i * 8px;
+  }
+}
+
+// Flex - start
+@for $i from 1 through 25 {
+  .flex-#{$i} {
+    flex: #{$i};
+  }
+}
+
+@each $val in $displays {
+  .#{$val} {
+    @include display($val);
+  }
+}
+
+@each $val in $directions {
+  .flex-#{$val} {
+    @include flex-direction($val);
+  }
+}
+
+@each $val in $aligns {
+  .align-#{$val} {
+    @include align-items($val);
+  }
+}
+
+@each $val in $justify {
+  .justify-#{$val} {
+    @include justify-content($val);
+  }
+}
+
+// Flex - end

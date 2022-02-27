@@ -1,0 +1,23 @@
+@import "src/styles/varriables";
+.auth_agreement {
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  .v-a-mid{
+    vertical-align: middle;
+  }
+  .link-to-signup{
+    color: $colorGreenPrimary;
+    &:hover{
+      color: $colorGreenPrimary;
+      opacity: 0.8;
+    }
+  }
+}
+
+.ant-typography.auth_agreement {
+  margin-bottom: 0;
+}

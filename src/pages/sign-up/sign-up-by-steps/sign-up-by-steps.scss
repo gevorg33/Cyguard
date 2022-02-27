@@ -1,0 +1,47 @@
+@import "src/styles/varriables";
+@import "src/styles/media";
+
+.sign-up-form{
+  //width: 30%;
+  margin-top: 12.5%;
+  @include media(mobile){
+    width: 90%;
+  }
+  .title-section{
+    margin-left: 22.5%;
+    width: 100%;
+    @include media(mobile){
+      margin-left: 10vw;
+      margin-top: 15vh;
+    }
+    .welcome-title{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 60px;
+      color: white;
+      @include media(mobile){
+        font-size: 48px;
+      }
+    }
+    .main-title{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .c-green{
+      color: $colorGreenPrimary !important;
+    }
+  }
+  .steps-section{
+    margin-left: 12.5%;
+    margin-top: 10%;
+  }
+
+  .ant-steps{
+    display:none
+  }
+}
